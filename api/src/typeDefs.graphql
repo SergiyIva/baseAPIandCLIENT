@@ -1,0 +1,13 @@
+
+type Message {
+    content: String!
+}
+
+type Query {
+    getMessage: [Message]
+    getFive: Int!
+}
+
+type Mutation {
+    sendMessage(msg: String): Boolean
+}
